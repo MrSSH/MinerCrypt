@@ -23,13 +23,15 @@ cyanClaro="\033[1;36m"
 branco="\033[1;37m"
 
 sleep 1.5s
-echo "$cyan [1] MINER-BITCOIN"
-read -p " Selecione a opção : " opcao
+echo "$cyan [1] CONFIG-VPS"
+echo "$cyan [2] MINER-BITCOIN"
+echo "$cyan [3] PROXY-CHECKER"
+echo "$cyan [4] CC-GEN"
+echo "$cyan [5] HOST-CHECKER"
+read utilitario
 
-case $opcao in
-
-1)
-minerBTC.sh
+if [ "$utilitario" = "1" ]
+then
 sleep 1
 echo "\033[44;1;37m Instalando....     \033[0m "
 sleep 0.5s
@@ -37,6 +39,7 @@ wget https://raw.githubusercontent.com/MrSSH/MinerCrypt/master/minerBTC.sh
 echo "\033[44;1;37m Instalado com Sucesso!     \033[0m "
 
 echo "Você Pode Executar o Utilitario Assim:\n"
-echo "sudo sh$verde minerBTC.sh CARTEIRA BITCOIN\033[0m"
-esac
+echo "sudo sh$verde miner.sh CARTEIRA BITCOIN\033[0m"
+fi
 
+exit 0
