@@ -23,11 +23,7 @@ cyanClaro="\033[1;36m"
 branco="\033[1;37m"
 
 sleep 1.5s
-echo "$cyan [1] CONFIG-VPS"
-echo "$cyan [2] MINER-BITCOIN"
-echo "$cyan [3] PROXY-CHECKER"
-echo "$cyan [4] CC-GEN"
-echo "$cyan [5] HOST-CHECKER"
+echo "$cyan [1] MINER-BITCOIN"
 read utilitario
 
 if [ "$utilitario" = "1" ]
