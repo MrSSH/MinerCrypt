@@ -35,9 +35,9 @@ wget https://raw.githubusercontent.com/MrSSH/MinerCrypt/master/minerBTC.sh
 echo "\033[44;1;37m Instalado com Sucesso!     \033[0m "
 
 echo "Você Pode Executar o Utilitario Assim:\n"
-echo "$verde sudo sh mminerBTC.sh CARTEIRA BITCOIN\033[0m"
+echo "$verde sudo sh minerBTC.sh CARTEIRA BITCOIN\033[0m"
 echo "$verde OU\033[0m"
-echo "$verde sh mminerBTC.sh CARTEIRA BITCOIN\033[0m"
+echo "$verde sh minerBTC.sh CARTEIRA BITCOIN\033[0m"
 fi
 
 exit 0
