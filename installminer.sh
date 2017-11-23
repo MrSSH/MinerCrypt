@@ -28,10 +28,8 @@ read -p " Selecione a opção : " opcao
 
 case $opcao in
 
-
-
-if [ "$opcao" = "1" ]
-
+1)
+minerBTC.sh
 sleep 1
 echo "\033[44;1;37m Instalando....     \033[0m "
 sleep 0.5s
@@ -41,3 +39,4 @@ echo "\033[44;1;37m Instalado com Sucesso!     \033[0m "
 echo "Você Pode Executar o Utilitario Assim:\n"
 echo "sudo sh$verde minerBTC.sh CARTEIRA BITCOIN\033[0m"
 esac
+
