@@ -40,4 +40,3 @@ echo "$verde                OU                   \033[0m"
 echo "$verde sh minerBTC.sh CARTEIRA BITCOIN\033[0m"
 fi
 
-exit 0
