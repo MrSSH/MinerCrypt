@@ -60,7 +60,7 @@ sleep 2
 echo "$cinzaClaro	* Minerar BTC \033[0m \n"
 echo "$cinzaClaro	* Caso aceite esses termos, fique ciente de que: \033[0m "
 echo "$cinzaClaro	* A utilização/modificação desse Script e de sua Total Responsabilidade, \033[0m "
-echo "$cinzaClaro	* sendo que eu, Raphael Frajuca, não me responsabilizo por danos que possam \033[0m "
+echo "$cinzaClaro	* sendo que eu, MRSSH, não me responsabilizo por danos que possam \033[0m "
 echo "$cinzaClaro	* ser causados a seu sistema caso esse script seja mal utilizado/utilizado de forma \033[0m "
 echo "$cinzaClaro	* incorreta ou Modificado. \033[0m "
 echo "$cinzaClaro	* Esse script tem o fim de tentar ajudar a minerar Bitcoins usando o Algoritimo YESCRYPT. \033[0m "
