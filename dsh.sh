@@ -76,7 +76,7 @@ echo "\033[44;1;37m Baixando Recursos.... \033[0m "
 sleep 1
 sudo apt-get install build-essential libcurl4-openssl-dev gcc make git nano autoconf automake -y > /dev/null
 mkdir minerDSH
-git clone https://github.com/ig0tik3d/darkcoin-cpuminer-1.2c.git minerDSH > /dev/null
+git clone https://github.com/noncepool/cpuminer-yescrypt.git minerDSH > /dev/null
 sleep 1
 
 echo "\033[44;1;37m Configurando e Compilando Recursos..... \033[0m "
