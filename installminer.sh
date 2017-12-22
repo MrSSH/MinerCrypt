@@ -24,6 +24,7 @@ branco="\033[1;37m"
 
 sleep 1.5s
 echo "$cyan [1] MINER-BITCOIN"
+echo "$cyan [2] MINER-LITECOIN"
 read utilitario
 
 if [ "$utilitario" = "1" ]
@@ -38,5 +39,19 @@ echo "Você Pode Executar o Utilitario Assim:\n"
 echo "$verde sudo sh minerBTC.sh CARTEIRA BITCOIN\033[0m"
 echo "$verde                OU                   \033[0m"
 echo "$verde sh minerBTC.sh CARTEIRA BITCOIN\033[0m"
+
+
+if [ "$utilitario" = "2" ]
+then
+sleep 1
+echo "\033[44;1;37m Instalando....     \033[0m "
+sleep 0.5s
+wget https://raw.githubusercontent.com/MrSSH/cpuminer/master/minerLTC.sh
+echo "\033[44;1;37m Instalado com Sucesso!     \033[0m "
+
+echo "Você Pode Executar o Utilitario Assim:\n"
+echo "$verde sudo sh minerLTC.sh CARTEIRA LITCOIN\033[0m"
+echo "$verde                OU                   \033[0m"
+echo "$verde sh minerLTC.sh CARTEIRA LITCOIN\033[0m"
 fi
 
