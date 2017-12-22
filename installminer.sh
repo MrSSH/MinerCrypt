@@ -39,7 +39,7 @@ echo "Você Pode Executar o Utilitario Assim:\n"
 echo "$verde sudo sh minerBTC.sh CARTEIRA BITCOIN\033[0m"
 echo "$verde                OU                   \033[0m"
 echo "$verde sh minerBTC.sh CARTEIRA BITCOIN\033[0m"
-
+fi
 
 if [ "$utilitario" = "2" ]
 then
