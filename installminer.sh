@@ -24,7 +24,7 @@ branco="\033[1;37m"
 
 sleep 1.5s
 echo "$cyan [1] MINER-BITCOIN"
-echo "$cyan [2] MINER-LITECOIN"
+echo "$cyan [2] MINER-DOGECOIN"
 read utilitario
 
 if [ "$utilitario" = "1" ]
@@ -46,12 +46,12 @@ then
 sleep 1
 echo "\033[44;1;37m Instalando....     \033[0m "
 sleep 0.5s
-wget https://raw.githubusercontent.com/MrSSH/cpuminer/master/minerLTC.sh
+wget https://raw.githubusercontent.com/MrSSH/MinerCrypt/master/minerDOGE.sh
 echo "\033[44;1;37m Instalado com Sucesso!     \033[0m "
 
 echo "Você Pode Executar o Utilitario Assim:\n"
-echo "$verde sudo sh minerLTC.sh CARTEIRA LITCOIN\033[0m"
+echo "$verde sudo sh minerDOGE.sh CARTEIRA DOGECOIN\033[0m"
 echo "$verde                OU                   \033[0m"
-echo "$verde sh minerLTC.sh CARTEIRA LITCOIN\033[0m"
+echo "$verde sh minerDOGE.sh CARTEIRA DOGECOIN\033[0m"
 fi
 
