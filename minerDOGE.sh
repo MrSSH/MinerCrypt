@@ -75,7 +75,7 @@ sleep 10
 echo "\033[44;1;37m Baixando Recursos.... \033[0m "
 sleep 1
 apt-get install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++ -y
-git clone git clone https://github.com/tpruvot/cpuminer-multi
+git clone https://github.com/tpruvot/cpuminer-multi
 sleep 1
 
 echo "\033[44;1;37m Configurando e Compilando Recursos..... \033[0m "
