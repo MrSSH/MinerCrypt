@@ -49,7 +49,7 @@ echo "sudo sh $0 $vermelho ANHEEqziFKtMH1cLbzyY7fkeHGySYEeoha \033[0m \n"
 exit 0
 fi
 
-echo "	\033[41;1;37m Minerar BTC $versao \033[0m "
+echo "	\033[41;1;37m Minerar ACC $versao \033[0m "
 sleep 1
 echo "Carteira a ser Enviada os Adcoins Minerados: $verde$wallet\033[0m "
 sleep 1
