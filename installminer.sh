@@ -26,6 +26,7 @@ sleep 1.5s
 echo "$cyan [1] MINER-BITCOIN"
 echo "$cyan [2] MINER-DOGECOIN"
 echo "$cyan [3] MINER-DIGIBYTE"
+echo "$cyan [4] MINER-ADDCOIN"
 read utilitario
 
 if [ "$utilitario" = "1" ]
@@ -68,4 +69,18 @@ echo "Você Pode Executar o Utilitario Assim:\n"
 echo "$verde sudo sh minerDBYTE.sh CARTEIRA DIGIBYTE\033[0m"
 echo "$verde                OU                   \033[0m"
 echo "$verde sh minerDBYTE.sh CARTEIRA DIGIBYTE\033[0m"
+fi
+
+if [ "$utilitario" = "4" ]
+then
+sleep 1
+echo "\033[44;1;37m Instalando....     \033[0m "
+sleep 0.5s
+wget https://raw.githubusercontent.com/MrSSH/MinerCrypt/master/minerADCOIN.sh
+echo "\033[44;1;37m Instalado com Sucesso!     \033[0m "
+
+echo "Você Pode Executar o Utilitario Assim:\n"
+echo "$verde sudo sh minerADCOIN.sh CARTEIRA ADCOIN\033[0m"
+echo "$verde                OU                   \033[0m"
+echo "$verde sh minerADCOIN.sh CARTEIRA ADCOIN\033[0m"
 fi
