@@ -51,7 +51,7 @@ fi
 
 echo "	\033[41;1;37m Minerar BCH $versao \033[0m "
 sleep 1
-echo "Carteira a ser Enviada os BITCOIN CASHs Minerados: $verde$wallet\033[0m "
+echo "Carteira a ser Enviada os Bitcoins Cash Minerados: $verde$wallet\033[0m "
 sleep 1
 
 echo "\033[44;1;37m Termos e Condições: \033[0m "
