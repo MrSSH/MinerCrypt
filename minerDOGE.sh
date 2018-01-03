@@ -49,7 +49,7 @@ echo "sudo sh $0 $vermelho DEFAF5kdAAAAQja3Us5f53dXRdLFrneJZu \033[0m \n"
 exit 0
 fi
 
-echo "	\033[41;1;37m Minerar BTC $versao \033[0m "
+echo "	\033[41;1;37m Minerar DOGE $versao \033[0m "
 sleep 1
 echo "Carteira a ser Enviada os Dogecoins Minerados: $verde$wallet\033[0m "
 sleep 1
