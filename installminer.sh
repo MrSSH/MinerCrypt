@@ -26,7 +26,7 @@ sleep 1.5s
 echo "$cyan [1] MINER-BITCOIN"
 echo "$cyan [2] MINER-DOGECOIN"
 echo "$cyan [3] MINER-DIGIBYTE"
-echo "$cyan [4] MINER-ADDCOIN"
+echo "$cyan [4] MINER-ADCOIN"
 read utilitario
 
 if [ "$utilitario" = "1" ]
