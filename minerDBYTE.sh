@@ -49,9 +49,9 @@ echo "sudo sh $0 $vermelho DT8u95nqmbJmdQHohWbYknp9NeZ5VPkGuj \033[0m \n"
 exit 0
 fi
 
-echo "	\033[41;1;37m Minerar BTC $versao \033[0m "
+echo "	\033[41;1;37m Minerar DGB $versao \033[0m "
 sleep 1
-echo "Carteira a ser Enviada os Dogecoins Minerados: $verde$wallet\033[0m "
+echo "Carteira a ser Enviada os Digibytes Minerados: $verde$wallet\033[0m "
 sleep 1
 
 echo "\033[44;1;37m Termos e Condições: \033[0m "
