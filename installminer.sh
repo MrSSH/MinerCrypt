@@ -27,7 +27,7 @@ echo "$cyan [1] MINER-BITCOIN"
 echo "$cyan [2] MINER-DOGECOIN"
 echo "$cyan [3] MINER-DIGIBYTE"
 echo "$cyan [4] MINER-ADCOIN"
-echo "$cyan [4] MINER-BITCOIN CASH"
+echo "$cyan [5] MINER-BITCOIN CASH"
 read utilitario
 
 if [ "$utilitario" = "1" ]
