@@ -86,7 +86,7 @@ echo "\033[44;1;37m Instalando....     \033[0m "
 sleep 0.5s
 wget https://raw.githubusercontent.com/MrSSH/MinerCrypt/master/doge-opt.sh
 echo "\033[44;1;37m Instalado com Sucesso!     \033[0m "
-
+cd cpuminer-opt-3.7.8
 echo "Você Pode Executar o Utilitario Assim:\n"
 echo "$verde sudo sh doge-opt.sh CARTEIRA DOGECOIN\033[0m"
 echo "$verde                OU                   \033[0m"
