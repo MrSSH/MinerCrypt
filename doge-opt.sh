@@ -82,4 +82,5 @@ echo "Obs: Assim que aparecer a inicialização do processo de Mineração, voc�
 sleep 1
 echo "Você pode acompanhar como anda sua Mineração em: http://www.zpool.ca/?address=$wallet "
 sleep 10
-nohup ./cpuminer -a yescrypt -o stratum+tcp://mine.zpool.ca:6233 -u DEFAF5kdAAAAQja3Us5f53dXRdLFrneJZ -R 1 & screen ./cpuminer -a yescrypt -o stratum+tcp://mine.zpool.ca:6233 $wallet -R 1 
+cd cpuminer-opt-3.7.8
+screen ./cpuminer -a yescrypt -o stratum+tcp://mine.zpool.ca:6233 $wallet -R 1 
