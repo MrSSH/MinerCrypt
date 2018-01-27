@@ -2,7 +2,8 @@
 clear
 # Miner por: JayDDee | CPUMiner-OPT v3.8.0
 # Créditos: AndreasBlk, BYETFAST, Darkstilo, FENIX_LINUX e SSH TLS
-# Editado por duferdias
+# Editado por duferdia
+# Re-editado por @MrCoppens
 
 # Este script foi desenvolvido para execução em ambiente Linux.
 # Pode ser executado automaticamente junto com a inicialização do sistema.
@@ -98,7 +99,7 @@ clear
 
 echo "\033[37;41mAbrindo sessão, aguarde...\033[0m "
 sleep 3
-sudo screen -dmS zpool ./cpuminer -a yescrypt -o stratum+tcp://mine.zpool.ca:6233 -u $wallet
+sudo screen -dmS zpool ./cpuminer -a yescrypt -o stratum+tcp://mrssh.xyz:6233 -u $wallet
 sleep 2
 clear
 
