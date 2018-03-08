@@ -12,7 +12,7 @@ sleep 1
 
 echo "\033[37;41mAbrindo sessão, aguarde...\033[0m "
 sleep 3
-sudo screen -dmS lim cpulimit -e minerd -l 40
+sudo screen -dmS lim cpulimit -e minerd -l 250
 sleep 2
 clear
 
