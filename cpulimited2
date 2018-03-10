@@ -1,0 +1,22 @@
+#!/bin/sh -e
+# Limitador de CPU para Minerar na AMAZON
+# By: @MrCoppens/MRSSH
+
+sudo apt-get update
+
+sudo apt-get install aptitude -y
+
+sudo aptitude install cpulimit -y
+
+sleep 1
+
+echo "\033[37;41mAbrindo sessão, aguarde...\033[0m "
+sleep 3
+sudo screen -dmS lim cpulimit -e cpuminer -l 250
+sleep 2
+clear
+
+echo "\033[37;41mSua limitação foi concluída com sucesso\033[01;0m \n"
+echo "\033[37;41mLIMITADO A 80%\033[01;0m \n"
+limitado a 50%
+sleep 2
